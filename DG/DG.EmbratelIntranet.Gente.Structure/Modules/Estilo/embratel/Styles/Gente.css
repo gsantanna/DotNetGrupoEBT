@@ -1,0 +1,28 @@
+/*Banner do site*/
+#contentRow {
+	background-image:url("../Images/bannerGente.png");
+}
+/*Cor de background do Titulo da p?gina*/
+#pageTitle {
+	background-color:#4cb860!important;
+}
+/*Cor de background dos tr?s n?veis do menu*/
+#sideNavBox ul.verticalnav > li a  {
+	background-color:#147562!important;
+}
+#sideNavBox ul.verticalnav > li li  a  {
+	background-color:#28a77b!important;
+}
+#sideNavBox ul.verticalnav > li li li  a  {
+	background-color:#33bf89!important;
+}
+#sideNavBox ul.verticalnav > li li li li a  {
+	background-color: #39DD9E!important
+}
+
+#contentBox {
+  margin-left: 20px;
+}
+.ms-webpartPage-root {
+  border-spacing: 2px;
+}

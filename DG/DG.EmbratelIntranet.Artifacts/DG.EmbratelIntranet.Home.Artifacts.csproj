@@ -1,0 +1,415 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9C3A3323-4CB5-4694-8ACA-65F2240F5716}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DG.EmbratelIntranet.Home.Artifacts</RootNamespace>
+    <AssemblyName>DG.EmbratelIntranet.Artifacts</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetOfficeVersion>15.0</TargetOfficeVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{C1CDDADD-2546-481F-9697-4EA41081F2FC};{14822709-B5A1-4724-98CA-57A101D1B079};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <SandboxedSolution>False</SandboxedSolution>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <ActiveDeploymentConfiguration>Default</ActiveDeploymentConfiguration>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>key.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.SharePoint.Linq, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Microsoft.SharePoint" />
+    <Reference Include="Microsoft.SharePoint.Client.ServerRuntime" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="EventReceivers\EVT_PageCreated\EVT_PageCreated.cs" />
+    <Compile Include="EventReceivers\EVT_PermMgr\EVT_PermMgr.cs" />
+    <Compile Include="EventReceivers\EVT_WebCreated\EVT_WebCreated.cs" />
+    <Compile Include="Features\RH_SiteCrachaListSync\RH_SiteCrachaListSync.EventReceiver.cs">
+      <DependentUpon>RH_SiteCrachaListSync.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Webparts\AcessoRapido\AcessoRapido.ascx.cs">
+      <DependentUpon>AcessoRapido.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Webparts\AcessoRapido\AcessoRapido.ascx.g.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AcessoRapido.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Webparts\Alertas\Alertas.ascx.cs">
+      <DependentUpon>Alertas.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Webparts\Alertas\Alertas.ascx.g.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Alertas.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Webparts\Aniversariantes\Aniversariantes.ascx.cs">
+      <DependentUpon>Aniversariantes.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Webparts\Aniversariantes\Aniversariantes.ascx.g.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Aniversariantes.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Webparts\BuscaSuperior\BuscaSuperior.ascx.cs">
+      <DependentUpon>BuscaSuperior.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Webparts\BuscaSuperior\BuscaSuperior.ascx.g.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BuscaSuperior.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Webparts\MenuPrincipal\MenuPrincipal.ascx.g.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MenuPrincipal.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Webparts\TVFlash\TVFlash.ascx.cs">
+      <DependentUpon>TVFlash.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Webparts\TVFlash\TVFlash.ascx.g.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TVFlash.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Webparts\MenuPrincipal\MenuPrincipal.ascx.cs">
+      <DependentUpon>MenuPrincipal.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Webparts\MeusSistemas\MeusSistemas.ascx.cs">
+      <DependentUpon>MeusSistemas.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Webparts\MeusSistemas\MeusSistemas.ascx.g.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MeusSistemas.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Webparts\Normativos\Normativos.ascx.cs">
+      <DependentUpon>Normativos.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Webparts\Normativos\Normativos.ascx.g.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Normativos.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Webparts\Noticias\Noticias.ascx.cs">
+      <DependentUpon>Noticias.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Webparts\Noticias\Noticias.ascx.g.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Noticias.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Webparts\Popup\Popup.ascx.cs">
+      <DependentUpon>Popup.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Webparts\Popup\Popup.ascx.g.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Popup.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Webparts\SAP\SAP.ascx.cs">
+      <DependentUpon>SAP.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Webparts\SAP\SAP.ascx.g.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SAP.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Webparts\Temas\Temas.ascx.cs">
+      <DependentUpon>Temas.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Webparts\Temas\Temas.ascx.g.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Temas.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Webparts\ConteudoMidia\ConteudoMidia.ascx.cs">
+      <DependentUpon>ConteudoMidia.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Webparts\ConteudoMidia\ConteudoMidia.ascx.g.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ConteudoMidia.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Webparts\UploadFotoUsuario\UploadFotoUsuario.cs" />
+    <Compile Include="Webparts\UploadFotoUsuario\UploadFotoUsuarioUserControl.ascx.cs">
+      <DependentUpon>UploadFotoUsuarioUserControl.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Webparts\UploadFotoUsuario\UploadFotoUsuarioUserControl.ascx.designer.cs">
+      <DependentUpon>UploadFotoUsuarioUserControl.ascx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Webparts\Welcome\Welcome.ascx.cs">
+      <DependentUpon>Welcome.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Webparts\Welcome\Welcome.ascx.g.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Welcome.ascx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="CustomActions\ACT_NewWPPageLateral\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{edc4c11e-d0e0-4555-8dbe-2b237ba5ecf7}</SharePointProjectItemId>
+    </None>
+    <None Include="CustomActions\ACT_NewWPPagePrincipal\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{bee36727-a08b-4ca6-aea1-df60f5184cc9}</SharePointProjectItemId>
+    </None>
+    <None Include="EventReceivers\EVT_PageCreated\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{b42a1055-b752-4a03-a84f-5eca5055ea19}</SharePointProjectItemId>
+    </None>
+    <None Include="EventReceivers\EVT_PermMgr\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{32eda5fb-b59f-471b-8c4a-4bd60944c72b}</SharePointProjectItemId>
+    </None>
+    <None Include="EventReceivers\EVT_WebCreated\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{16b00237-f904-464a-b5d1-b4f6c8dd5a1f}</SharePointProjectItemId>
+    </None>
+    <None Include="Features\Events\Events.feature">
+      <FeatureId>{76f37a81-cece-40e7-b0b2-d88d9f391ba1}</FeatureId>
+    </None>
+    <None Include="Features\Actions\Actions.feature">
+      <FeatureId>{16c16886-9276-4cff-a2e3-f9bd04fb81ee}</FeatureId>
+    </None>
+    <None Include="Features\RH_SiteCrachaListSync\RH_SiteCrachaListSync.feature">
+      <FeatureId>{95d47189-de2f-4be0-888e-72e06a2986e0}</FeatureId>
+    </None>
+    <None Include="Features\Webparts\Webparts.feature">
+      <FeatureId>{be21850a-0fa2-4571-9937-129478c2a5e8}</FeatureId>
+    </None>
+    <None Include="key.snk" />
+    <None Include="Package\Package.package">
+      <PackageId>{16df060b-b398-40ec-a07a-7f59262325e2}</PackageId>
+    </None>
+    <None Include="Package\Package.Template.xml">
+      <DependentUpon>Package.package</DependentUpon>
+    </None>
+    <None Include="Webparts\AcessoRapido\AcessoRapido.webpart">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Webparts\AcessoRapido\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{dd355d0b-2247-471d-bf65-099a3b836952}</SharePointProjectItemId>
+    </None>
+    <None Include="Webparts\Alertas\Alertas.webpart" />
+    <None Include="Webparts\Alertas\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{0cc0ddf9-e429-42de-98e7-7aebba25989c}</SharePointProjectItemId>
+    </None>
+    <None Include="Webparts\Aniversariantes\Aniversariantes.webpart" />
+    <None Include="Webparts\Aniversariantes\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{9f3bdd19-a60e-449b-a648-99a2354310f8}</SharePointProjectItemId>
+    </None>
+    <None Include="Webparts\BuscaSuperior\BuscaSuperior.webpart">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Webparts\BuscaSuperior\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{c6f18c9b-7569-434b-ba59-4211a8d3148e}</SharePointProjectItemId>
+    </None>
+    <None Include="Webparts\TVFlash\TVFlash.webpart">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Webparts\TVFlash\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{288dd627-21e0-48e6-a4b7-8e5a18ddc1c2}</SharePointProjectItemId>
+    </None>
+    <None Include="Webparts\MenuPrincipal\MenuPrincipal.webpart">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Webparts\MenuPrincipal\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{60e37187-29c0-4692-a79c-dbe86f6b70ba}</SharePointProjectItemId>
+    </None>
+    <None Include="Webparts\MeusSistemas\MeusSistemas.webpart" />
+    <None Include="Webparts\MeusSistemas\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{c57b1b12-6a01-4d2f-98de-8b2b4f0d83d7}</SharePointProjectItemId>
+    </None>
+    <None Include="Webparts\Normativos\Normativos.webpart" />
+    <None Include="Webparts\Normativos\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{3d23e1d3-7049-4fce-b5e0-5a69eef8d438}</SharePointProjectItemId>
+    </None>
+    <None Include="Webparts\Noticias\Noticias.webpart" />
+    <None Include="Webparts\Noticias\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{5ec2aa7a-d3b4-4e0c-9cf3-554461ff2ade}</SharePointProjectItemId>
+    </None>
+    <None Include="Webparts\Popup\Popup.webpart" />
+    <None Include="Webparts\Popup\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{7a4e0376-be7a-45c7-a091-715e001e7783}</SharePointProjectItemId>
+    </None>
+    <None Include="Webparts\SAP\SAP.webpart" />
+    <None Include="Webparts\SAP\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{38acbf7e-6dc5-43f2-b532-b6faf4ddc1de}</SharePointProjectItemId>
+    </None>
+    <None Include="Webparts\Temas\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{72ab2cef-844f-4364-ba83-e9853f445209}</SharePointProjectItemId>
+    </None>
+    <None Include="Webparts\Temas\Temas.webpart" />
+    <None Include="Webparts\ConteudoMidia\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{0f149a97-4923-4a3d-91d8-7958895c9d1d}</SharePointProjectItemId>
+    </None>
+    <None Include="Webparts\ConteudoMidia\ConteudoMidia.webpart">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Webparts\UploadFotoUsuario\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{41af7f0d-3143-4cd1-9c47-719a43e051bc}</SharePointProjectItemId>
+    </None>
+    <None Include="Webparts\UploadFotoUsuario\UploadFotoUsuario.webpart" />
+    <None Include="Webparts\Welcome\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{c9ab475f-83d4-456d-9394-3b97e8765540}</SharePointProjectItemId>
+    </None>
+    <None Include="Webparts\Welcome\Welcome.webpart" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="CustomActions\ACT_NewWPPageLateral\Elements.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="CustomActions\ACT_NewWPPagePrincipal\Elements.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="EventReceivers\EVT_PageCreated\Elements.xml" />
+    <Content Include="EventReceivers\EVT_PermMgr\Elements.xml" />
+    <Content Include="EventReceivers\EVT_WebCreated\Elements.xml" />
+    <Content Include="Features\Events\Events.Template.xml">
+      <DependentUpon>Events.feature</DependentUpon>
+    </Content>
+    <Content Include="Features\Actions\Actions.Template.xml">
+      <DependentUpon>Actions.feature</DependentUpon>
+    </Content>
+    <Content Include="Features\RH_SiteCrachaListSync\RH_SiteCrachaListSync.Template.xml">
+      <DependentUpon>RH_SiteCrachaListSync.feature</DependentUpon>
+    </Content>
+    <Content Include="Features\Webparts\Webparts.Template.xml">
+      <DependentUpon>Webparts.feature</DependentUpon>
+    </Content>
+    <Content Include="Webparts\AcessoRapido\AcessoRapido.ascx">
+      <Generator>SharePointWebPartCodeGenerator</Generator>
+      <LastGenOutput>AcessoRapido.ascx.g.cs</LastGenOutput>
+    </Content>
+    <Content Include="Webparts\AcessoRapido\Elements.xml" />
+    <Content Include="Webparts\Alertas\Alertas.ascx">
+      <Generator>SharePointWebPartCodeGenerator</Generator>
+      <LastGenOutput>Alertas.ascx.g.cs</LastGenOutput>
+    </Content>
+    <Content Include="Webparts\Alertas\Elements.xml" />
+    <Content Include="Webparts\Aniversariantes\Aniversariantes.ascx">
+      <Generator>SharePointWebPartCodeGenerator</Generator>
+      <LastGenOutput>Aniversariantes.ascx.g.cs</LastGenOutput>
+    </Content>
+    <Content Include="Webparts\Aniversariantes\Elements.xml" />
+    <Content Include="Webparts\BuscaSuperior\BuscaSuperior.ascx">
+      <Generator>SharePointWebPartCodeGenerator</Generator>
+      <LastGenOutput>BuscaSuperior.ascx.g.cs</LastGenOutput>
+    </Content>
+    <Content Include="Webparts\BuscaSuperior\Elements.xml" />
+    <Content Include="Webparts\TVFlash\TVFlash.ascx">
+      <Generator>SharePointWebPartCodeGenerator</Generator>
+      <LastGenOutput>TVFlash.ascx.g.cs</LastGenOutput>
+    </Content>
+    <Content Include="Webparts\TVFlash\Elements.xml" />
+    <Content Include="Webparts\MenuPrincipal\Elements.xml" />
+    <Content Include="Webparts\MenuPrincipal\MenuPrincipal.ascx">
+      <Generator>SharePointWebPartCodeGenerator</Generator>
+      <LastGenOutput>MenuPrincipal.ascx.g.cs</LastGenOutput>
+    </Content>
+    <Content Include="Webparts\MeusSistemas\Elements.xml" />
+    <Content Include="Webparts\MeusSistemas\MeusSistemas.ascx">
+      <Generator>SharePointWebPartCodeGenerator</Generator>
+      <LastGenOutput>MeusSistemas.ascx.g.cs</LastGenOutput>
+    </Content>
+    <Content Include="Webparts\Normativos\Elements.xml" />
+    <Content Include="Webparts\Normativos\Normativos.ascx">
+      <Generator>SharePointWebPartCodeGenerator</Generator>
+      <LastGenOutput>Normativos.ascx.g.cs</LastGenOutput>
+    </Content>
+    <Content Include="Webparts\Noticias\Elements.xml" />
+    <Content Include="Webparts\Noticias\Noticias.ascx">
+      <Generator>SharePointWebPartCodeGenerator</Generator>
+      <LastGenOutput>Noticias.ascx.g.cs</LastGenOutput>
+    </Content>
+    <Content Include="Webparts\Popup\Elements.xml" />
+    <Content Include="Webparts\Popup\Popup.ascx">
+      <Generator>SharePointWebPartCodeGenerator</Generator>
+      <LastGenOutput>Popup.ascx.g.cs</LastGenOutput>
+    </Content>
+    <Content Include="Webparts\SAP\Elements.xml" />
+    <Content Include="Webparts\SAP\SAP.ascx">
+      <Generator>SharePointWebPartCodeGenerator</Generator>
+      <LastGenOutput>SAP.ascx.g.cs</LastGenOutput>
+    </Content>
+    <Content Include="Webparts\Temas\Elements.xml" />
+    <Content Include="Webparts\Temas\Temas.ascx">
+      <Generator>SharePointWebPartCodeGenerator</Generator>
+      <LastGenOutput>Temas.ascx.g.cs</LastGenOutput>
+    </Content>
+    <Content Include="Webparts\ConteudoMidia\Elements.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Webparts\ConteudoMidia\ConteudoMidia.ascx">
+      <Generator>SharePointWebPartCodeGenerator</Generator>
+      <LastGenOutput>ConteudoMidia.ascx.g.cs</LastGenOutput>
+    </Content>
+    <Content Include="Webparts\UploadFotoUsuario\Elements.xml" />
+    <Content Include="Webparts\UploadFotoUsuario\UploadFotoUsuarioUserControl.ascx" />
+    <Content Include="Webparts\Welcome\Elements.xml" />
+    <Content Include="Webparts\Welcome\Welcome.ascx">
+      <Generator>SharePointWebPartCodeGenerator</Generator>
+      <LastGenOutput>Welcome.ascx.g.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DG.EmbratelIntranet.Home.Core\DG.EmbratelIntranet.Home.Core.csproj">
+      <Project>{a113fb98-44d0-4da1-9752-1d841011e848}</Project>
+      <Name>DG.EmbratelIntranet.Home.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DG.Framework\DG.Framework.Core.csproj">
+      <Project>{9adc26fb-cbab-439d-8503-100947c5acd4}</Project>
+      <Name>DG.Framework.Core</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(VSToolsPath)\SharePointTools\Microsoft.VisualStudio.SharePoint.targets" Condition="'$(VSToolsPath)' != ''" />
+</Project>

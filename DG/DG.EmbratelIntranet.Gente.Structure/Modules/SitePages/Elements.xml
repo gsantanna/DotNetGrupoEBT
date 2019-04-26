@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Module Name="SitePages" Url="SitePages">
+    <File ReplaceContent="TRUE" IgnoreIfAlreadyExists="FALSE" Type="GhostableInLibrary" Path="SitePages\Home.aspx" Url="Home.aspx" />
+  </Module>
+</Elements>

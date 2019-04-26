@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<FieldTypes>
+  <FieldType>
+    <Field Name="TypeName">SPValitatorField</Field>
+    <Field Name="TypeDisplayName">Campo Personalizado de Validação e Máscara</Field>
+    <Field Name="TypeShortDescription">Campo Personalizado de Validação e Máscara</Field>
+    <Field Name="ParentType">Text</Field>
+    <Field Name="UserCreatable">TRUE</Field>
+    <Field Name="FieldTypeClass">DG.Embratelintranet.SPValitatorField_FieldType,$SharePoint.Project.AssemblyFullName$</Field>
+    <PropertySchema>
+      <Fields>
+
+        <Field Name="lblValidation" DisplayName="----------------- Validação -----------------" Type="Choice" Format="RadioButtons">
+          <CHOICES>
+          </CHOICES>
+        </Field>
+        <Field Name="ddlTipo" DisplayName="Tipo de Validação:" Type="Choice">
+          <CHOICES>
+            <CHOICE>Selecione...</CHOICE>
+            <CHOICE>Email</CHOICE>
+            <CHOICE>CPF</CHOICE>
+            <CHOICE>CNPJ</CHOICE>
+            <CHOICE>Telefone</CHOICE>
+            <CHOICE>Personalizar...</CHOICE>
+          </CHOICES>
+          <Default>Selecione...</Default>
+        </Field>
+
+        <Field Name="rblOption" DisplayName="Método Personalizado de Validação:" Type="Choice" Format="RadioButtons">
+          <CHOICES>
+            <CHOICE>Regex</CHOICE>
+            <CHOICE>Função de código JavaScript</CHOICE>
+          </CHOICES>
+        </Field>
+
+        <Field Name="txtValidationLogic" DisplayName="Lógica de Validação Personalizada:" Type="Note">
+<Default>
+  function validate(sender, args){
+  args.IsValid = false;
+  var textBoxText = args.Value;
+
+  //TODO: Insira seu código JavaScript aqui.
+  //A variável acima (textBoxText) lhe traz o valor do
+  //  campo de texto deste CustomField.
+  //Caso queira resgatar valores de outros campos do formulário,
+  //  utilize a seguinte expressão:
+  //  var textoCAMPO = getField('NOME DO ATRIBUTO', 'VALOR DO ATRIBUTO').index(INDEX).val();
+  //
+  //Lembre-se que para validar positivamente, atribua
+  //  'true' à args.IsValid .
+  //Ex:
+  //  args.IsValid = true; //validação está OK! Sendo
+  //                assim, é feito um PostBack.
+  //  args.IsValid = false; //validação não está OK.
+  //                Sendo assim, não é feito um
+  //                PostBack por haver algo incorreto.
+  }</Default>
+        </Field>
+
+        <Field Name="txtMessage" DisplayName="Mensagem de Erro:" MaxLength="4096" Type="Text">
+          <Default>Informação inválida.</Default>
+        </Field>
+
+
+        <Field Name="lblMasks" DisplayName="----------------- Máscaras -----------------" Type="Choice" Format="RadioButtons">
+          <CHOICES>
+          </CHOICES>
+        </Field>
+        <Field Name="ddlMascara" DisplayName="Máscara do Campo de Texto:" Type="Choice">
+          <CHOICES>
+            <CHOICE>Selecione...</CHOICE>
+            <CHOICE>CPF | 999.999.999-99</CHOICE>
+            <CHOICE>CNPJ | 99.999.999/9999-99</CHOICE>
+            <CHOICE>Telefone | (99) 9999-9999</CHOICE>
+            <CHOICE>Data | 99/99/9999</CHOICE>
+            <CHOICE>CEP | 99.999-999</CHOICE>
+            <CHOICE>Nenhuma</CHOICE>
+            <CHOICE>Personalizar...</CHOICE>
+          </CHOICES>
+          <Default>Selecione...</Default>
+        </Field>
+
+        <Field Name="txtMascara" DisplayName="Máscara Personalisada do Campo de Texto:" MaxLength="4096" Type="Text">
+        </Field>
+        
+      </Fields>
+    </PropertySchema>
+  </FieldType>
+</FieldTypes>

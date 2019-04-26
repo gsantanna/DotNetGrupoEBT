@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Module Name="Estilo" Url="Estilo">
+    <File Path="Estilo\embratel\Images\bg-menu.png" Url="embratel/Images/bg-menu.png" />
+    <File Path="Estilo\embratel\Images\logo.png" Url="embratel/Images/logo.png" />
+    <File Path="Estilo\embratel\Images\patrocinadorClaro.jpg" Url="embratel/Images/patrocinadorClaro.jpg" />
+    <File Path="Estilo\embratel\Images\patrocinadorEmbratel.jpg" Url="embratel/Images/patrocinadorEmbratel.jpg" />
+    <File Path="Estilo\embratel\Images\patrocinadorRio2016.jpg" Url="embratel/Images/patrocinadorRio2016.jpg" />
+    <File Path="Estilo\embratel\Images\banner.png" Url="embratel/Images/banner.png" />
+    <File Path="Estilo\embratel\Styles\Negocios.css" Url="embratel/Styles/Negocios.css" />
+  </Module>
+</Elements>

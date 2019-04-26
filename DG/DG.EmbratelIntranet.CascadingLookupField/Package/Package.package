@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="c1ddf845-d6ec-441e-94bf-bd7513f4da44" solutionId="c1ddf845-d6ec-441e-94bf-bd7513f4da44" resetWebServer="false" sharePointProductVersion="15.0" name="DG.EmbratelIntranet.CascadingLookupField" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <projectItems>
+    <projectItemReference itemId="c70cc512-c312-4d20-9c9b-3394c2fd1aa1" />
+    <projectItemReference itemId="e245cdde-4a30-45b9-bf57-17a814d777a1" />
+  </projectItems>
+</package>

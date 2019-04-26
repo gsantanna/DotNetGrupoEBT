@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/" >
+  <Module Name="TVFlash" List="113" Url="_catalogs/wp">
+    <File Path="TVFlash\TVFlash.webpart" Url="DG.EmbratelIntranet.Home.Artifacts_TVFlash.webpart" Type="GhostableInLibrary" >
+      <Property Name="Group" Value="Embratel" />
+    </File>
+  </Module>
+</Elements>

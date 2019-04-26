@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<webParts>
+  <webPart xmlns="http://schemas.microsoft.com/WebPart/v3">
+    <metaData>
+      <type name="DG.EmbratelIntranet.Home.Artifacts.Webparts.AcessoRapido.AcessoRapido, $SharePoint.Project.AssemblyFullName$" />
+      <importErrorMessage>$Resources:core,ImportErrorMessage;</importErrorMessage>
+    </metaData>
+    <data>
+      <properties>
+        <property name="Title" type="string">Acesso Rápido</property>
+        <property name="Description" type="string">Acesso Rápido Web Part</property>
+      </properties>
+    </data>
+  </webPart>
+</webParts>

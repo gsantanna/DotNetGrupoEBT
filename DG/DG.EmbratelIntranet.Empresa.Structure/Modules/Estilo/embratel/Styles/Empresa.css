@@ -1,0 +1,21 @@
+/*Banner do site*/
+#contentRow {
+	background-image:url("../Images/banner.png");
+}
+/*Cor de background do Titulo da p?gina*/
+#pageTitle {
+	background-color:#2c83e5!important;
+}
+/*Cor de background dos tr?s n?veis do menu*/
+#sideNavBox ul.verticalnav > li a  {
+	background-color:#0d61ba!important;
+}
+#sideNavBox ul.verticalnav > li li a  {
+	background-color:#0b70e1!important;
+}
+#sideNavBox ul.verticalnav > li li li a  {
+	background-color:#0c8eff!important;
+}
+#sideNavBox ul.verticalnav > li li li li a  {
+	background-color: #6CBBFF!important;
+}

@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Module Name="_catalogs">
+    <File Path="_catalogs\Sample.txt" Url="_catalogs/Sample.txt" />
+    <File Path="_catalogs\masterpage\template.master" Url="_catalogs/masterpage/template.master" />
+  </Module>
+</Elements>

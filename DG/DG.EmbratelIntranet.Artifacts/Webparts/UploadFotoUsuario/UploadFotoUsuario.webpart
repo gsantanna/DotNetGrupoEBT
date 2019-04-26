@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<webParts>
+  <webPart xmlns="http://schemas.microsoft.com/WebPart/v3">
+    <metaData>
+      <type name="DG.EmbratelIntranet.Home.Artifacts.Webparts.UploadFotoUsuario.UploadFotoUsuario, $SharePoint.Project.AssemblyFullName$" />
+      <importErrorMessage>$Resources:core,ImportErrorMessage;</importErrorMessage>
+    </metaData>
+    <data>
+      <properties>
+        <property name="Title" type="string">Upload Foto Usuário</property>
+        <property name="Description" type="string">Utilize esta webpart para realizar o upload da foto do usuário</property>
+      </properties>
+    </data>
+  </webPart>
+</webParts>

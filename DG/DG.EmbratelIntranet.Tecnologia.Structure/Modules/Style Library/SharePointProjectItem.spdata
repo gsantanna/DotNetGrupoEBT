@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ProjectItem Type="Microsoft.VisualStudio.SharePoint.Module" DefaultFile="Elements.xml" SupportedTrustLevels="All" SupportedDeploymentScopes="Web, Site" xmlns="http://schemas.microsoft.com/VisualStudio/2010/SharePointTools/SharePointProjectItemModel">
+  <Files>
+    <ProjectItemFile Source="Elements.xml" Target="Style Library\" Type="ElementManifest" />
+    <ProjectItemFile Source="embratel\Images\bg-menu.png" Target="Style Library\embratel\Images\" Type="ElementFile" />
+    <ProjectItemFile Source="embratel\Images\logo.png" Target="Style Library\embratel\Images\" Type="ElementFile" />
+    <ProjectItemFile Source="embratel\Images\patrocinadorClaro.jpg" Target="Style Library\embratel\Images\" Type="ElementFile" />
+    <ProjectItemFile Source="embratel\Images\patrocinadorEmbratel.jpg" Target="Style Library\embratel\Images\" Type="ElementFile" />
+    <ProjectItemFile Source="embratel\Images\patrocinadorRio2016.jpg" Target="Style Library\embratel\Images\" Type="ElementFile" />
+    <ProjectItemFile Source="embratel\Images\banner.png" Target="Style Library\embratel\Images\" Type="ElementFile" />
+    <ProjectItemFile Source="embratel\Styles\Tecnologia.css" Target="Style Library\embratel\Styles\" Type="ElementFile" />
+  </Files>
+</ProjectItem>

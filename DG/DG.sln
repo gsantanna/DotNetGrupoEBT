@@ -1,0 +1,227 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DG.EmbratelIntranet.Home.Structure", "DG.EmbratelIntranet\DG.EmbratelIntranet.Home.Structure.csproj", "{69CA2B01-D1F2-49D4-8DA8-37A805624A93}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DG.EmbratelIntranet.Home.Artifacts", "DG.EmbratelIntranet.Artifacts\DG.EmbratelIntranet.Home.Artifacts.csproj", "{9C3A3323-4CB5-4694-8ACA-65F2240F5716}"
+	ProjectSection(ProjectDependencies) = postProject
+		{69CA2B01-D1F2-49D4-8DA8-37A805624A93} = {69CA2B01-D1F2-49D4-8DA8-37A805624A93}
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Home", "Home", "{716A10C9-DE99-4AB7-8A2B-871C6F2B77E4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Gente", "Gente", "{FAB32A04-8AF7-41F6-ACD4-E6F4886195F6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Empresa", "Empresa", "{6998578B-E8F4-4F4C-8A01-F82717F3999B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Negócios", "Negócios", "{BDC55A79-8565-4FBE-8AAB-858FB5CD5262}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SuporteServiços", "SuporteServiços", "{94CF922F-A413-4FAB-9157-3C12FAAC756C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tecnologia", "Tecnologia", "{EDAF726C-CDF8-405D-B55A-27CC97AB81C6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DG.EmbratelIntranet.Gente.Structure", "DG.EmbratelIntranet.Gente.Structure\DG.EmbratelIntranet.Gente.Structure.csproj", "{BF65EE0B-E286-4CEC-AFE8-F4F480791019}"
+	ProjectSection(ProjectDependencies) = postProject
+		{69CA2B01-D1F2-49D4-8DA8-37A805624A93} = {69CA2B01-D1F2-49D4-8DA8-37A805624A93}
+		{9C3A3323-4CB5-4694-8ACA-65F2240F5716} = {9C3A3323-4CB5-4694-8ACA-65F2240F5716}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DG.EmbratelIntranet.Negocios.Structure", "DG.EmbratelIntranet.Negocios.Structure\DG.EmbratelIntranet.Negocios.Structure.csproj", "{F2BC74D2-E9EA-44B6-9CF4-639B41D8A5E0}"
+	ProjectSection(ProjectDependencies) = postProject
+		{69CA2B01-D1F2-49D4-8DA8-37A805624A93} = {69CA2B01-D1F2-49D4-8DA8-37A805624A93}
+		{9C3A3323-4CB5-4694-8ACA-65F2240F5716} = {9C3A3323-4CB5-4694-8ACA-65F2240F5716}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DG.EmbratelIntranet.SuporteServicos.Structure", "DG.EmbratelIntranet.SuporteServicos.Structure\DG.EmbratelIntranet.SuporteServicos.Structure.csproj", "{F23EBCAC-3294-4809-AEAD-85E72E0799B6}"
+	ProjectSection(ProjectDependencies) = postProject
+		{69CA2B01-D1F2-49D4-8DA8-37A805624A93} = {69CA2B01-D1F2-49D4-8DA8-37A805624A93}
+		{9C3A3323-4CB5-4694-8ACA-65F2240F5716} = {9C3A3323-4CB5-4694-8ACA-65F2240F5716}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DG.EmbratelIntranet.Tecnologia.Structure", "DG.EmbratelIntranet.Tecnologia.Structure\DG.EmbratelIntranet.Tecnologia.Structure.csproj", "{766B3633-6101-4C6F-8C80-4639151D473C}"
+	ProjectSection(ProjectDependencies) = postProject
+		{69CA2B01-D1F2-49D4-8DA8-37A805624A93} = {69CA2B01-D1F2-49D4-8DA8-37A805624A93}
+		{9C3A3323-4CB5-4694-8ACA-65F2240F5716} = {9C3A3323-4CB5-4694-8ACA-65F2240F5716}
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Deploy", "Deploy", "{71DF3E10-D02F-48FA-9E29-33F771C820DC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Component", "Component", "{745A1716-57F3-40D0-AC2C-B4BF9384A726}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Field", "Field", "{4327AA10-A230-41FA-971B-24ECDE2BF2E4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DG.EmbratelIntranet.ValidatorField", "DG.EmbratelIntranet.ValidatorField\DG.EmbratelIntranet.ValidatorField.csproj", "{71D36786-71A6-4E42-AF34-50262949C3D8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DG.EmbratelIntranet.Home.Core", "DG.EmbratelIntranet.Home.Core\DG.EmbratelIntranet.Home.Core.csproj", "{A113FB98-44D0-4DA1-9752-1D841011E848}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Webpart", "Webpart", "{F53EE29B-1713-4829-9903-17BAB7129461}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Embratel", "Embratel", "{6997568F-C5CD-4F11-A67D-3AA87EDF76C8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Framework", "Framework", "{9BD3F0FE-F6C8-4452-9C66-CAA059770703}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DG.Framework.Core", "DG.Framework\DG.Framework.Core.csproj", "{9ADC26FB-CBAB-439D-8503-100947C5ACD4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Intranet", "Intranet", "{4B6DFF7D-1459-4197-BF08-A239815B645B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Product", "Product", "{D375FEBA-CE12-4201-A016-61AFC98364BE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3rd", "3rd", "{256A3F11-DBB3-493A-9CBB-381872155FD9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DG.EmbratelIntranet.Empresa.Structure", "DG.EmbratelIntranet.Empresa.Structure\DG.EmbratelIntranet.Empresa.Structure.csproj", "{DC8C72EB-F134-4920-9452-8474E83E5F54}"
+	ProjectSection(ProjectDependencies) = postProject
+		{69CA2B01-D1F2-49D4-8DA8-37A805624A93} = {69CA2B01-D1F2-49D4-8DA8-37A805624A93}
+		{9C3A3323-4CB5-4694-8ACA-65F2240F5716} = {9C3A3323-4CB5-4694-8ACA-65F2240F5716}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DG.EmbratelIntranet.CascadingLookupField", "DG.EmbratelIntranet.CascadingLookupField\DG.EmbratelIntranet.CascadingLookupField.csproj", "{436CC41F-30AE-4DB6-B9B8-65F3242EDD27}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 11
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://rguimaraes.visualstudio.com/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = DG.EmbratelIntranet.Artifacts\\DG.EmbratelIntranet.Home.Artifacts.csproj
+		SccProjectTopLevelParentUniqueName1 = DG.sln
+		SccProjectName1 = DG.EmbratelIntranet.Artifacts
+		SccLocalPath1 = DG.EmbratelIntranet.Artifacts
+		SccProjectUniqueName2 = DG.EmbratelIntranet.CascadingLookupField\\DG.EmbratelIntranet.CascadingLookupField.csproj
+		SccProjectTopLevelParentUniqueName2 = DG.sln
+		SccProjectName2 = DG.EmbratelIntranet.CascadingLookupField
+		SccLocalPath2 = DG.EmbratelIntranet.CascadingLookupField
+		SccProjectUniqueName3 = DG.EmbratelIntranet.Empresa.Structure\\DG.EmbratelIntranet.Empresa.Structure.csproj
+		SccProjectTopLevelParentUniqueName3 = DG.sln
+		SccProjectName3 = DG.EmbratelIntranet.Empresa.Structure
+		SccLocalPath3 = DG.EmbratelIntranet.Empresa.Structure
+		SccProjectUniqueName4 = DG.EmbratelIntranet.Gente.Structure\\DG.EmbratelIntranet.Gente.Structure.csproj
+		SccProjectTopLevelParentUniqueName4 = DG.sln
+		SccProjectName4 = DG.EmbratelIntranet.Gente.Structure
+		SccLocalPath4 = DG.EmbratelIntranet.Gente.Structure
+		SccProjectUniqueName5 = DG.EmbratelIntranet.Home.Core\\DG.EmbratelIntranet.Home.Core.csproj
+		SccProjectTopLevelParentUniqueName5 = DG.sln
+		SccProjectName5 = DG.EmbratelIntranet.Home.Core
+		SccLocalPath5 = DG.EmbratelIntranet.Home.Core
+		SccProjectUniqueName6 = DG.EmbratelIntranet.Negocios.Structure\\DG.EmbratelIntranet.Negocios.Structure.csproj
+		SccProjectTopLevelParentUniqueName6 = DG.sln
+		SccProjectName6 = DG.EmbratelIntranet.Negocios.Structure
+		SccLocalPath6 = DG.EmbratelIntranet.Negocios.Structure
+		SccProjectUniqueName7 = DG.EmbratelIntranet.SuporteServicos.Structure\\DG.EmbratelIntranet.SuporteServicos.Structure.csproj
+		SccProjectTopLevelParentUniqueName7 = DG.sln
+		SccProjectName7 = DG.EmbratelIntranet.SuporteServicos.Structure
+		SccLocalPath7 = DG.EmbratelIntranet.SuporteServicos.Structure
+		SccProjectUniqueName8 = DG.EmbratelIntranet.Tecnologia.Structure\\DG.EmbratelIntranet.Tecnologia.Structure.csproj
+		SccProjectTopLevelParentUniqueName8 = DG.sln
+		SccProjectName8 = DG.EmbratelIntranet.Tecnologia.Structure
+		SccLocalPath8 = DG.EmbratelIntranet.Tecnologia.Structure
+		SccProjectUniqueName9 = DG.EmbratelIntranet.ValidatorField\\DG.EmbratelIntranet.ValidatorField.csproj
+		SccProjectTopLevelParentUniqueName9 = DG.sln
+		SccProjectName9 = DG.EmbratelIntranet.ValidatorField
+		SccLocalPath9 = DG.EmbratelIntranet.ValidatorField
+		SccProjectUniqueName10 = DG.Framework\\DG.Framework.Core.csproj
+		SccProjectTopLevelParentUniqueName10 = DG.sln
+		SccProjectName10 = DG.Framework
+		SccLocalPath10 = DG.Framework
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{69CA2B01-D1F2-49D4-8DA8-37A805624A93}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{69CA2B01-D1F2-49D4-8DA8-37A805624A93}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{69CA2B01-D1F2-49D4-8DA8-37A805624A93}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{69CA2B01-D1F2-49D4-8DA8-37A805624A93}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{69CA2B01-D1F2-49D4-8DA8-37A805624A93}.Release|Any CPU.Build.0 = Release|Any CPU
+		{69CA2B01-D1F2-49D4-8DA8-37A805624A93}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{9C3A3323-4CB5-4694-8ACA-65F2240F5716}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9C3A3323-4CB5-4694-8ACA-65F2240F5716}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9C3A3323-4CB5-4694-8ACA-65F2240F5716}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{9C3A3323-4CB5-4694-8ACA-65F2240F5716}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9C3A3323-4CB5-4694-8ACA-65F2240F5716}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9C3A3323-4CB5-4694-8ACA-65F2240F5716}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{BF65EE0B-E286-4CEC-AFE8-F4F480791019}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BF65EE0B-E286-4CEC-AFE8-F4F480791019}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BF65EE0B-E286-4CEC-AFE8-F4F480791019}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{BF65EE0B-E286-4CEC-AFE8-F4F480791019}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BF65EE0B-E286-4CEC-AFE8-F4F480791019}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BF65EE0B-E286-4CEC-AFE8-F4F480791019}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{F2BC74D2-E9EA-44B6-9CF4-639B41D8A5E0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F2BC74D2-E9EA-44B6-9CF4-639B41D8A5E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F2BC74D2-E9EA-44B6-9CF4-639B41D8A5E0}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{F2BC74D2-E9EA-44B6-9CF4-639B41D8A5E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F2BC74D2-E9EA-44B6-9CF4-639B41D8A5E0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F2BC74D2-E9EA-44B6-9CF4-639B41D8A5E0}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{F23EBCAC-3294-4809-AEAD-85E72E0799B6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F23EBCAC-3294-4809-AEAD-85E72E0799B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F23EBCAC-3294-4809-AEAD-85E72E0799B6}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{F23EBCAC-3294-4809-AEAD-85E72E0799B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F23EBCAC-3294-4809-AEAD-85E72E0799B6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F23EBCAC-3294-4809-AEAD-85E72E0799B6}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{766B3633-6101-4C6F-8C80-4639151D473C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{766B3633-6101-4C6F-8C80-4639151D473C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{766B3633-6101-4C6F-8C80-4639151D473C}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{766B3633-6101-4C6F-8C80-4639151D473C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{766B3633-6101-4C6F-8C80-4639151D473C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{766B3633-6101-4C6F-8C80-4639151D473C}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{71D36786-71A6-4E42-AF34-50262949C3D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{71D36786-71A6-4E42-AF34-50262949C3D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{71D36786-71A6-4E42-AF34-50262949C3D8}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{71D36786-71A6-4E42-AF34-50262949C3D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{71D36786-71A6-4E42-AF34-50262949C3D8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{71D36786-71A6-4E42-AF34-50262949C3D8}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{A113FB98-44D0-4DA1-9752-1D841011E848}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A113FB98-44D0-4DA1-9752-1D841011E848}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A113FB98-44D0-4DA1-9752-1D841011E848}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{A113FB98-44D0-4DA1-9752-1D841011E848}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A113FB98-44D0-4DA1-9752-1D841011E848}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A113FB98-44D0-4DA1-9752-1D841011E848}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{9ADC26FB-CBAB-439D-8503-100947C5ACD4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9ADC26FB-CBAB-439D-8503-100947C5ACD4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9ADC26FB-CBAB-439D-8503-100947C5ACD4}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{9ADC26FB-CBAB-439D-8503-100947C5ACD4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9ADC26FB-CBAB-439D-8503-100947C5ACD4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9ADC26FB-CBAB-439D-8503-100947C5ACD4}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{DC8C72EB-F134-4920-9452-8474E83E5F54}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC8C72EB-F134-4920-9452-8474E83E5F54}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC8C72EB-F134-4920-9452-8474E83E5F54}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{DC8C72EB-F134-4920-9452-8474E83E5F54}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DC8C72EB-F134-4920-9452-8474E83E5F54}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DC8C72EB-F134-4920-9452-8474E83E5F54}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{436CC41F-30AE-4DB6-B9B8-65F3242EDD27}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{436CC41F-30AE-4DB6-B9B8-65F3242EDD27}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{436CC41F-30AE-4DB6-B9B8-65F3242EDD27}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{436CC41F-30AE-4DB6-B9B8-65F3242EDD27}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{436CC41F-30AE-4DB6-B9B8-65F3242EDD27}.Release|Any CPU.Build.0 = Release|Any CPU
+		{436CC41F-30AE-4DB6-B9B8-65F3242EDD27}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{69CA2B01-D1F2-49D4-8DA8-37A805624A93} = {716A10C9-DE99-4AB7-8A2B-871C6F2B77E4}
+		{9C3A3323-4CB5-4694-8ACA-65F2240F5716} = {716A10C9-DE99-4AB7-8A2B-871C6F2B77E4}
+		{716A10C9-DE99-4AB7-8A2B-871C6F2B77E4} = {6997568F-C5CD-4F11-A67D-3AA87EDF76C8}
+		{FAB32A04-8AF7-41F6-ACD4-E6F4886195F6} = {6997568F-C5CD-4F11-A67D-3AA87EDF76C8}
+		{6998578B-E8F4-4F4C-8A01-F82717F3999B} = {6997568F-C5CD-4F11-A67D-3AA87EDF76C8}
+		{BDC55A79-8565-4FBE-8AAB-858FB5CD5262} = {6997568F-C5CD-4F11-A67D-3AA87EDF76C8}
+		{94CF922F-A413-4FAB-9157-3C12FAAC756C} = {6997568F-C5CD-4F11-A67D-3AA87EDF76C8}
+		{EDAF726C-CDF8-405D-B55A-27CC97AB81C6} = {6997568F-C5CD-4F11-A67D-3AA87EDF76C8}
+		{BF65EE0B-E286-4CEC-AFE8-F4F480791019} = {FAB32A04-8AF7-41F6-ACD4-E6F4886195F6}
+		{F2BC74D2-E9EA-44B6-9CF4-639B41D8A5E0} = {BDC55A79-8565-4FBE-8AAB-858FB5CD5262}
+		{F23EBCAC-3294-4809-AEAD-85E72E0799B6} = {94CF922F-A413-4FAB-9157-3C12FAAC756C}
+		{766B3633-6101-4C6F-8C80-4639151D473C} = {EDAF726C-CDF8-405D-B55A-27CC97AB81C6}
+		{4327AA10-A230-41FA-971B-24ECDE2BF2E4} = {745A1716-57F3-40D0-AC2C-B4BF9384A726}
+		{71D36786-71A6-4E42-AF34-50262949C3D8} = {4327AA10-A230-41FA-971B-24ECDE2BF2E4}
+		{A113FB98-44D0-4DA1-9752-1D841011E848} = {716A10C9-DE99-4AB7-8A2B-871C6F2B77E4}
+		{F53EE29B-1713-4829-9903-17BAB7129461} = {745A1716-57F3-40D0-AC2C-B4BF9384A726}
+		{6997568F-C5CD-4F11-A67D-3AA87EDF76C8} = {4B6DFF7D-1459-4197-BF08-A239815B645B}
+		{9ADC26FB-CBAB-439D-8503-100947C5ACD4} = {9BD3F0FE-F6C8-4452-9C66-CAA059770703}
+		{4B6DFF7D-1459-4197-BF08-A239815B645B} = {D375FEBA-CE12-4201-A016-61AFC98364BE}
+		{256A3F11-DBB3-493A-9CBB-381872155FD9} = {745A1716-57F3-40D0-AC2C-B4BF9384A726}
+		{DC8C72EB-F134-4920-9452-8474E83E5F54} = {6998578B-E8F4-4F4C-8A01-F82717F3999B}
+		{436CC41F-30AE-4DB6-B9B8-65F3242EDD27} = {4327AA10-A230-41FA-971B-24ECDE2BF2E4}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="70ab903e-a480-4e2d-bdf1-84a4942aa1f1" solutionId="70ab903e-a480-4e2d-bdf1-84a4942aa1f1" resetWebServer="false" sharePointProductVersion="15.0" name="DG.EmbratelIntranet.Empresa.Structure" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <features>
+    <featureReference itemId="c54f040b-65f8-4877-84ab-2e3c17f7db70" />
+    <featureReference itemId="be21850a-0fa2-4571-9937-129478c2a5e8" projectPath="..\DG.EmbratelIntranet.Artifacts\DG.EmbratelIntranet.Home.Artifacts.csproj" />
+    <featureReference itemId="b5eabb7f-cea0-4ef4-a8e3-2bb35dc9c317" />
+  </features>
+</package>

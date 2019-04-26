@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="1ddd7944-2744-4b9d-87a5-568971a119fa" solutionId="1ddd7944-2744-4b9d-87a5-568971a119fa" resetWebServer="false" sharePointProductVersion="15.0" name="SPCustomField" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <projectItems>
+    <projectItemReference itemId="77fd6578-c4cf-4664-8c01-944fb54a91e3" />
+    <projectItemReference itemId="6e2b6513-1ae0-4578-a8d6-d64335688702" />
+  </projectItems>
+</package>

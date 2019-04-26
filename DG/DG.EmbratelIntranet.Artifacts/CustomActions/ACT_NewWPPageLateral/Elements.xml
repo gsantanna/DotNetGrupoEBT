@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <CustomAction
+    GroupId="SiteActions"
+    Id="{600CCA9F-CFF2-4744-8F0E-59F7DC4EFFD6}"
+    Location="Microsoft.SharePoint.StandardMenu"
+    Sequence="1001"
+    Description="Cria uma nova página de webpart a partir da página atual e associa automaticamente ao menu lateral."
+    Title="Criar nova página de webpart (com menu interno)">
+      <UrlAction Url="/_layouts/DG/Handlers/ActionHandler.aspx?Executable=DG.Framework.Home.Core.CustomActions.NewPageAction&amp;Menu=Menu%20Lateral"/>
+  </CustomAction>
+</Elements>

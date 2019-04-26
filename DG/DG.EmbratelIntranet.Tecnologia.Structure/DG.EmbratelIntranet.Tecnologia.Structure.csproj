@@ -1,0 +1,130 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{766B3633-6101-4C6F-8C80-4639151D473C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DG.EmbratelIntranet.Tecnologia.Structure</RootNamespace>
+    <AssemblyName>DG.EmbratelIntranet.Tecnologia.Structure</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetOfficeVersion>15.0</TargetOfficeVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{C1CDDADD-2546-481F-9697-4EA41081F2FC};{14822709-B5A1-4724-98CA-57A101D1B079};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <SandboxedSolution>False</SandboxedSolution>
+    <ActiveDeploymentConfiguration>No Activation</ActiveDeploymentConfiguration>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>key.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="Microsoft.SharePoint" />
+    <Reference Include="Microsoft.SharePoint.Client.ServerRuntime" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Features\Colors\Colors.EventReceiver.cs">
+      <DependentUpon>Colors.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\Content\Content.EventReceiver.cs">
+      <DependentUpon>Content.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Features\Install\Install.EventReceiver.cs">
+      <DependentUpon>Install.feature</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Features\Colors\Colors.feature">
+      <FeatureId>{4752921f-ef6d-464a-8352-fbae55bab85a}</FeatureId>
+    </None>
+    <None Include="Features\Content\Content.feature">
+      <FeatureId>{49a63330-48c6-4b7f-b972-d02237076bf7}</FeatureId>
+    </None>
+    <None Include="Features\Install\Install.feature">
+      <FeatureId>{196dae0d-7b96-4f6a-8d61-eef22cf631df}</FeatureId>
+    </None>
+    <None Include="key.snk" />
+    <None Include="Modules\SitePages\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{0de5969d-0a67-4768-bf83-1f226469d596}</SharePointProjectItemId>
+    </None>
+    <None Include="Modules\Style Library\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{84d11763-fd25-4d41-8534-3d982137bfbd}</SharePointProjectItemId>
+    </None>
+    <None Include="Modules\_catalogs\masterpage\template.master" />
+    <None Include="Modules\_catalogs\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{987f71d4-23f1-476b-a936-f292c2c37090}</SharePointProjectItemId>
+    </None>
+    <None Include="Package\Package.package">
+      <PackageId>{f918fff4-b148-43c9-b0ad-cfcbf03c6243}</PackageId>
+    </None>
+    <None Include="Package\Package.Template.xml">
+      <DependentUpon>Package.package</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Modules\_catalogs\pagelayout\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Features\Colors\Colors.Template.xml">
+      <DependentUpon>Colors.feature</DependentUpon>
+    </Content>
+    <Content Include="Features\Content\Content.Template.xml">
+      <DependentUpon>Content.feature</DependentUpon>
+    </Content>
+    <Content Include="Features\Install\Install.Template.xml">
+      <DependentUpon>Install.feature</DependentUpon>
+    </Content>
+    <Content Include="Modules\SitePages\Elements.xml" />
+    <Content Include="Modules\SitePages\Sample.txt" />
+    <Content Include="Modules\Style Library\Elements.xml" />
+    <Content Include="Modules\Style Library\embratel\Images\banner.png" />
+    <Content Include="Modules\Style Library\embratel\Images\bg-menu.png" />
+    <Content Include="Modules\Style Library\embratel\Images\logo.png" />
+    <Content Include="Modules\Style Library\embratel\Images\patrocinadorClaro.jpg" />
+    <Content Include="Modules\Style Library\embratel\Images\patrocinadorEmbratel.jpg" />
+    <Content Include="Modules\Style Library\embratel\Images\patrocinadorRio2016.jpg" />
+    <Content Include="Modules\Style Library\embratel\Styles\Tecnologia.css" />
+    <Content Include="Modules\_catalogs\Elements.xml" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(VSToolsPath)\SharePointTools\Microsoft.VisualStudio.SharePoint.targets" Condition="'$(VSToolsPath)' != ''" />
+</Project>

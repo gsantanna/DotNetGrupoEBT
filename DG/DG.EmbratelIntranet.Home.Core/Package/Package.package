@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="e7e5fd01-6510-4892-ac97-221ca01fa3dd" solutionId="e7e5fd01-6510-4892-ac97-221ca01fa3dd" resetWebServer="false" sharePointProductVersion="15.0" name="DG.EmbratelIntranet.Home.Core" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <projectItems>
+    <projectItemReference itemId="1b3ef7c3-d49c-4263-a091-7162f491d7e5" />
+  </projectItems>
+</package>

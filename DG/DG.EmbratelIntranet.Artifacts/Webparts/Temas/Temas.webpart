@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<webParts>
+  <webPart xmlns="http://schemas.microsoft.com/WebPart/v3">
+    <metaData>
+      <type name="DG.EmbratelIntranet.Home.Artifacts.Webparts.Temas.Temas, $SharePoint.Project.AssemblyFullName$" />
+      <importErrorMessage>$Resources:core,ImportErrorMessage;</importErrorMessage>
+    </metaData>
+    <data>
+      <properties>
+        <property name="Title" type="string">Temas da Intranet</property>
+        <property name="Description" type="string">Temas da Intranet Web Part</property>
+      </properties>
+    </data>
+  </webPart>
+</webParts>
